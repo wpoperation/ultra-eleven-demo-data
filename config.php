@@ -1,8 +1,76 @@
 <?php
 
       $data = array(
+        'magazine' => array(
+          'categories'        => array( 'Magazine' ),
+          'preview_url' => 'http://demo.wpoperation.com/ultra-eleven/magazine/',
+          'xml_file'        => 'content.xml',
+          'theme_options'  => 'options.txt',
+          'widgets_file'    => 'widgets.wie',
+          'home_title'      => 'Home',
+          'blog_title'      => 'Blog',
+          'posts_to_show'   => '5',
+          'is_shop' => false,
+          'menus'         => array(
+              'main-menu' => 'Primary Menu',
+              'footer-menu' => 'Footer Menu'
+          ),
+          'required_plugins'  => array(
+            'free' => array(
+              array(
+                'slug'    => 'cs-framework',
+                'init'    => 'cs-framework/cs-framework.php',
+                'name'    => 'Cs Framework',
+              ),
+              array(
+                'slug'    => 'elementor',
+                'init'    => 'elementor/elementor.php',
+                'name'    => 'Elementor',
+              ),
+              array(
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
+              )
+            ),
+          ),
+        ),
+        'news' => array(
+          'categories'        => array( 'News' ),
+          'preview_url' => 'http://demo.wpoperation.com/ultra-eleven/news-magazine/',
+          'xml_file'        => 'content.xml',
+          'theme_options'  => 'options.txt',
+          'widgets_file'    => 'widgets.wie',
+          'home_title'      => 'Home',
+          'blog_title'      => 'Blog',
+          'posts_to_show'   => '5',
+          'is_shop' => false,
+          'menus'         => array(
+              'main-menu' => 'Primary Menu',
+              'footer-menu' => 'Footer Menu'
+          ),
+          'required_plugins'  => array(
+            'free' => array(
+              array(
+                'slug'    => 'cs-framework',
+                'init'    => 'cs-framework/cs-framework.php',
+                'name'    => 'Cs Framework',
+              ),
+              array(
+                'slug'    => 'elementor',
+                'init'    => 'elementor/elementor.php',
+                'name'    => 'Elementor',
+              ),
+              array(
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
+              )
+            ),
+          ),
+        ),
         'default' => array(
-          'categories'        => array( 'Fashion','Blog' ),
+          'categories'        => array( 'News','Magazine' ),
           'preview_url' => 'http://demo.wpoperation.com/ultra-eleven/default/',
           'xml_file'        => 'content.xml',
           'theme_options'  => 'options.txt',
@@ -23,9 +91,9 @@
                 'name'    => 'Cs Framework',
               ),
               array(
-                'slug'    => 'ultra-companion',
-                'init'    => 'ultra-companion/ultra-companion.php',
-                'name'    => 'Ultra Companion',
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
               ),
               array(
                 'slug'    => 'mailpoet',
@@ -36,7 +104,7 @@
           ),
         ),
         'fashion' => array(
-          'categories'        => array( 'Fashion' ),
+          'categories'        => array( 'Fashion','News' ),
           'preview_url' => 'http://demo.wpoperation.com/ultra-eleven/fashion/',
           'xml_file'        => 'content.xml',
           'theme_options'  => 'options.txt',
@@ -57,9 +125,9 @@
                 'name'    => 'Cs Framework',
               ),
               array(
-                'slug'    => 'ultra-companion',
-                'init'    => 'ultra-companion/ultra-companion.php',
-                'name'    => 'Ultra Companion',
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
               ),
               array(
                 'slug'    => 'woocommerce',
@@ -75,7 +143,7 @@
           ),
         ),
         'lifestyle' => array(
-          'categories'        => array( 'Lifestyle' ),
+          'categories'        => array( 'Lifestyle','News' ),
           'preview_url' => 'http://demo.wpoperation.com/ultra-eleven/lifestyle/',
           'xml_file'        => 'content.xml',
           'theme_options'  => 'options.txt',
@@ -96,9 +164,9 @@
                 'name'    => 'Cs Framework',
               ),
               array(
-                'slug'    => 'ultra-companion',
-                'init'    => 'ultra-companion/ultra-companion.php',
-                'name'    => 'Ultra Companion',
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
               )
             ),
           ),
@@ -125,9 +193,9 @@
                 'name'    => 'Cs Framework',
               ),
               array(
-                'slug'    => 'ultra-companion',
-                'init'    => 'ultra-companion/ultra-companion.php',
-                'name'    => 'Ultra Companion',
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
               ),
             ),
           ),
@@ -138,7 +206,7 @@
           'xml_file'        => 'content.xml',
           'theme_options'  => 'options.txt',
           'widgets_file'    => 'widgets.wie',
-          'home_title'      => 'Home',
+          'home_title'      => 'New Home',
           'blog_title'      => 'Blog',
           'posts_to_show'   => '5',
           'is_shop' => false,
@@ -154,20 +222,25 @@
                 'name'    => 'Cs Framework',
               ),
               array(
-                'slug'    => 'ultra-companion',
-                'init'    => 'ultra-companion/ultra-companion.php',
-                'name'    => 'Ultra Companion',
+                'slug'    => 'elementor',
+                'init'    => 'elementor/elementor.php',
+                'name'    => 'Elementor',
+              ),
+              array(
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
               ),
             ),
           ),
         ),
         'fitness' => array(
-          'categories'        => array( 'Sports' ),
+          'categories'        => array( 'Fitness' ),
           'preview_url' => 'http://demo.wpoperation.com/ultra-eleven/fitness/',
           'xml_file'        => 'content.xml',
           'theme_options'  => 'options.txt',
           'widgets_file'    => 'widgets.wie',
-          'home_title'      => 'Home',
+          'home_title'      => 'New Home',
           'blog_title'      => 'Blog',
           'posts_to_show'   => '5',
           'is_shop' => false,
@@ -183,25 +256,30 @@
                 'name'    => 'Cs Framework',
               ),
               array(
-                'slug'    => 'ultra-companion',
-                'init'    => 'ultra-companion/ultra-companion.php',
-                'name'    => 'Ultra Companion',
+                'slug'    => 'elementor',
+                'init'    => 'elementor/elementor.php',
+                'name'    => 'Elementor',
+              ),
+              array(
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
               ),
             ),
           ),
         ),
         'tech' => array(
-          'categories'        => array( 'Tech' ),
+          'categories'        => array( 'Tech','News' ),
           'preview_url' => 'http://demo.wpoperation.com/ultra-eleven/tech/',
           'xml_file'        => 'content.xml',
           'theme_options'  => 'options.txt',
           'widgets_file'    => 'widgets.wie',
-          'home_title'      => 'Home',
+          'home_title'      => 'New Home',
           'blog_title'      => 'Blog',
           'posts_to_show'   => '5',
           'is_shop' => false,
           'menus'         => array(
-              'main-menu' => 'Primary Menu',
+              'main-menu' => 'Primary menu',
               'top-menu' => 'Top Menu',
           ),
           'required_plugins'  => array(
@@ -212,11 +290,18 @@
                 'name'    => 'Cs Framework',
               ),
               array(
-                'slug'    => 'ultra-companion',
-                'init'    => 'ultra-companion/ultra-companion.php',
-                'name'    => 'Ultra Companion',
+                'slug'    => 'elementor',
+                'init'    => 'elementor/elementor.php',
+                'name'    => 'Elementor',
+              ),
+              array(
+                'slug'    => 'ultra-eleven-addons',
+                'init'    => 'ultra-eleven-addons/ultra-eleven-addons.php',
+                'name'    => 'Ultra Eleven Addons',
               ),
             ),
           ),
         ),
       );
+$file = json_encode($data);
+print_r($file);
